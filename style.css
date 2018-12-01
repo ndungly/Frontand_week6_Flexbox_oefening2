@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #698F3F;
+    align-items: center;
+    color: white;
+}
+
+.site-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+
+.navigation-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+.nav-link:link {
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #698F3F;
+}
+
+.nav-link:visited {
+    color: #12331B;
+}
+
+.mid-section {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #E7DECD;
+    padding: 1rem;
+}
+
+.sidebar-title {
+    font-family: 'Abril Fatface';
+    font-size: 1.2rem;
+    padding: 2.5rem 0rem 0rem 0rem;
+}
+
+.sidebar-image {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+.main-section-top {
+    display: flex;
+}
+
+.main-content {
+    flex: 3;
+    padding: 2rem;
+}
+
+.main-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2rem;
+    padding: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.main-section-bottom {
+    text-align: center;
+    background-color: #804E49;
+    color: white;
+}
+
