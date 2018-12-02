@@ -15,9 +15,9 @@ body {
 }
 
 .site-name {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 700;
-    padding: 0 0 0 1rem;
+    padding: 1rem 0 1rem 1rem;
     margin: 0;
 }
 
@@ -27,10 +27,10 @@ body {
 }
 
 .nav-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     margin: 0;
-    padding: 1rem;
+    padding: 1.5rem 2.5rem;
 
 }
 
@@ -49,6 +49,7 @@ body {
 
 .mid-section {
     display: flex;
+    flex-grow: 1;
 }
 
 .sidebar {
@@ -80,6 +81,7 @@ img {
 
 .main-section-top {
     display: flex;
+    flex-grow: 1;
 }
 
 .main-content {
