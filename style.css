@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -24,14 +28,16 @@ body {
 .navigation-list {
     display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
     font-size: 1.2rem;
     text-decoration: none;
+    display: block;
     margin: 0;
     padding: 1.5rem 2.5rem;
-
 }
 
 .nav-link:link {
@@ -106,3 +112,66 @@ p {
     color: white;
 }
 
+
+/*styling for tablet*/
+
+@media only screen and (max-width: 1000px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .site-name {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .navigation {
+        flex: 1 1 100%;
+        display: flex;
+    }
+
+    .navigation-list {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+/*Ik probeer hier de li items evenredig te verdelen over de breedte van het scherm.. Dit werkt nog niet. */
+
+    .nav-link {
+        flex: 1 1 20%;
+        }
+
+
+/*Ik probeer hier alle elementen onder elkaar te zetten maar de footer wil niet naar onderen. */
+
+    .mid-section {
+        flex-direction: column;
+    }
+
+    .main-section-top {
+        flex-direction: column;
+    }
+
+    .main-section-bottom {
+        order: 99;
+    }
+}
+
+
+/*styling for mobile*/
+
+@media only screen and (max-width: 600px) {
+
+    .navigation-list {
+        display: flex;
+        flex-direction: column; /*het liefst wil ik hier flex-wrap en basis gebruiken maar aangezien ik dit niet aan de praat krijg (ook niet voor tablet), dan maar even zo.*/
+        align-items: stretch;
+    }
+
+    .nav-link {
+        text-align: center; 
+    }
+
+}
