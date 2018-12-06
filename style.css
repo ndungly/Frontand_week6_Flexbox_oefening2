@@ -137,9 +137,7 @@ p {
         justify-content: center;
     }
 
-/*Ik probeer hier de li items evenredig te verdelen over de breedte van het scherm.. Dit werkt nog niet. */
-
-    .nav-link {
+    .navigation-list li {
         flex: 1 1 20%;
         }
 
@@ -152,6 +150,7 @@ p {
 
     .main-section-top {
         flex-direction: column;
+        order: 98;
     }
 
     .main-section-bottom {
@@ -162,15 +161,14 @@ p {
 
 /*styling for mobile*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .navigation-list {
-        display: flex;
-        flex-direction: column; /*het liefst wil ik hier flex-wrap en basis gebruiken maar aangezien ik dit niet aan de praat krijg (ook niet voor tablet), dan maar even zo.*/
-        align-items: stretch;
+        flex-wrap: wrap;
     }
 
-    .nav-link {
+    .navigation-list li {
+        flex-basis: 100%;
         text-align: center; 
     }
 
