@@ -14,8 +14,9 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #698F3F;
-    align-items: center;
     color: white;
+    flex: 0 0 6%;
+    align-items: center;
 }
 
 .site-name {
@@ -59,7 +60,7 @@ body {
 }
 
 .sidebar {
-    flex: 1;
+    flex: 1 1 20%;
     background-color: #E7DECD;
     padding: 1rem;
 }
@@ -82,16 +83,16 @@ img {
 .main-section {
     display: flex;
     flex-direction: column;
-    flex: 4;
+    flex: 1 1 80%;
 }
 
 .main-section-top {
     display: flex;
-    flex-grow: 1;
+    flex: 1 1 89%;
 }
 
 .main-content {
-    flex: 3;
+    flex: 1 1 60%;
     padding: 2rem;
 }
 
@@ -110,6 +111,7 @@ p {
     text-align: center;
     background-color: #804E49;
     color: white;
+    flex: 0 0 5%;
 }
 
 
@@ -119,6 +121,7 @@ p {
 
     .header {
         flex-wrap: wrap;
+        flex: 0 0 12%;
     }
 
     .site-name {
@@ -139,10 +142,18 @@ p {
 
     .navigation-list li {
         flex: 1 1 20%;
-        }
+    }
 
+    .main-section-top {
+        flex: 1 1 83%;
+    }
 
 /*Ik probeer hier alle elementen onder elkaar te zetten maar de footer wil niet naar onderen. */
+
+
+    .main-section {
+        
+    }
 
     .mid-section {
         flex-direction: column;
@@ -150,11 +161,9 @@ p {
 
     .main-section-top {
         flex-direction: column;
-        order: 98;
     }
 
     .main-section-bottom {
-        order: 99;
     }
 }
 
